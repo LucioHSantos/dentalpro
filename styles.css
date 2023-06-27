@@ -182,17 +182,14 @@
 			cursor: pointer;
 		}
 
-		.icon-contact {
-			display: flex;
-			justify-content: flex-end;
-			position: fixed;
-			top: 80%;
-			left: 92%;
+		.icon-link{
+			color: #f3f3f8;
+			position:fixed;
+			top: 78%;
+			left: 91%;
+			font-size: 6rem;
 		}
-		.icon-contact img{
-			width: 4rem;
-		}
-	
+
 		.rodape{
 			display: flex;
 			flex-direction: column;
