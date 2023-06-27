@@ -1,0 +1,351 @@
+
+		*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --number0: #083448;
+            --number1: #f3f3f8;
+            --number2: #205f97;
+			--number3: #068188;
+        }
+
+		body, html {
+			margin: 0;
+			font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+			background:#068188;
+			height: 100%;
+		}
+
+	
+
+		.conteudo {
+			color: var(--number1);
+			text-align: justify;
+			padding: 2rem 8rem;
+		}
+		a{
+			text-decoration: none;
+		}
+        header,
+		footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+			gap: 3%;
+        }
+
+        .logo{
+			height: 8rem;	
+			margin-left: 4%;
+      }
+
+        .nav{
+            display: flex;
+            gap: 3rem;
+			padding-right: 8%;			
+        }
+		
+		.button,
+		.nav-link {
+			display: inline-block;
+			transition: all 0.2s ease-in;
+			position: relative;
+			overflow: hidden;
+			z-index: 1;
+			color: var(--number3);
+			height: 3rem;
+			padding: 0.7em 1.7em;
+			font-size: 18px;
+			text-decoration: none;
+			border-radius: 0.5em;
+			background: var(--number1);
+		  }
+		  .button:before,
+		  .nav-link:before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) scaleY(1) scaleX(1.25);
+			top: 100%;
+			width: 160%;
+			height: 180%;
+			background-color: var(--number0);
+			border-radius: 50%;
+			display: block;
+			transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+			z-index: -1;
+		  }
+		  
+		  .button:after,
+		  .nav-link:after {
+			content: "";
+			position: absolute;
+			left: 55%;
+			transform: translateX(-50%) scaleY(1) scaleX(1.45);
+			top: 180%;
+			width: 160%;
+			height: 190%;
+			background-color: var(--number3);
+			border-radius: 50%;
+			display: block;
+			transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+			z-index: -1;
+		  }
+		  
+		  .button:hover,
+		  .nav-link:hover {
+			color: #ffffff;
+			border: 1px solid var(--number3);
+		  }
+		  
+		  .button:hover:before,
+		  .nav-link:hover:before {
+			top: -35%;
+			background-color: var(--number3);
+			transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+		  }
+		  
+		  .button:hover:after,
+		  .nav-link:hover:after {
+			top: -45%;
+			background-color: var(--number3);
+			transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+		  }
+		  
+		  .nav-contatos{
+			display: flex;
+			margin: 0 auto;
+			flex-direction: column;
+			padding-top: 1%;
+			font-size: 0.75rem;
+			margin-right: 3%;
+		  }
+		  .nav-contatos,
+		  .nav-contatos a{
+			color: var(--number1);
+		  }
+
+		  .icon{
+			width: 10%;
+		  }
+
+		  .texto p{
+			font-size: 0.8rem;
+			animation-duration: 5s;
+			animation-name: slidein;
+		  }
+
+
+		.grid{
+			display:flex;
+			align-items: center;
+			justify-content: space-around;
+			gap: 8%;
+		}
+	
+		video{
+			width:40%;
+			box-shadow: 0 0 0.5rem #083448;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			color: #111;
+			text-align: center;
+		}
+
+		p{
+			margin-bottom: 20px;
+		}
+		.texto{
+			width: 80rem;
+		}
+
+		.texto2{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			font-size: 2rem;
+		}
+
+		.button{
+			border: none;
+			outline: none;
+		}
+		
+		.button:hover{
+			border: 2px solid var(--number1);
+			cursor: pointer;
+		}
+
+		.icon-contact {
+			display: flex;
+			justify-content: flex-end;
+			position: fixed;
+			top: 80%;
+			left: 92%;
+		}
+		.icon-contact img{
+			width: 4rem;
+		}
+	
+		.rodape{
+			display: flex;
+			flex-direction: column;
+			height: 12rem;
+		}
+
+		.invite{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			padding-top: 2%;
+			gap: 2%;
+		}
+
+		.invite-esq{
+			display: flex;
+			align-items: center;
+			padding: 2rem 2rem;
+			gap: 4%;
+		}
+
+		.invite-p{
+			width: 15rem;
+			padding-top: 6%;
+
+		}
+
+		.contato-bottom{
+			display: flex;
+			align-items: center;
+			gap: 2%;
+		}
+
+		.contato-img{
+			align-self: flex-start;
+			width: 1.5rem;
+			height: 1.5rem;
+			padding-top: 1%;
+		}
+
+	
+		/* Efeito Parallax
+		-------------------------------*/
+		.caixa0, .caixa1, .caixa2, .caixa3, .caixa4 {
+			position: relative;
+			height: 50%;
+			opacity: 0.8;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed; 
+		}
+
+        .caixa0{
+            height: 4rem;
+            background-image: url("./imagens/protese.jpg");
+        }
+
+		.caixa1 {
+			background-image: url("./imagens/protese.jpg");
+		}
+
+		.caixa2 {
+			background-image: url("https://www.yourdentistryguide.com/wp-content/uploads/2017/11/dental-lab-tech-min.jpg");
+		}
+
+		.caixa3 {
+			background-image: url("https://www.gentledentistry.com/wp-content/uploads/2019/04/patient-invisalign00.jpg");
+		}
+
+		
+
+		.conteudo-titulo {
+			position: absolute;
+			left: 0;
+			top: 45%;
+			width: 100%;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 767px) {
+			.conteudo{
+				padding: 1rem 5%;
+			}
+
+			.nav-link, 
+			.reservas{
+				display: flex;
+				align-self: center;
+				font-size: 0.6rem;
+			}
+
+			.logo{
+				width: 4rem;
+				height: 4rem;
+			}
+
+			.conteudo-titulo{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.invite-p,
+			.contato-bottom{
+				padding-right: 13%;
+				font-size: 0.8rem;
+			}
+
+			.contato-bottom{
+				padding: none;
+			}
+			h3{
+				font-size: 1rem;
+			}
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			.conteudo{
+				padding: 1rem 5%;
+			}
+
+			.nav-link, 
+			.reservas{
+				display: flex;
+				align-self: center;
+				font-size: 0.9rem;
+			}
+
+			.logo{
+				width: 4rem;
+				height: 4rem;
+			}
+
+			.invite-esq{
+				display: flex;
+				justify-content: space-between;
+				gap: 2rem;
+
+			}
+			.invite-p,
+			.contato-bottom{
+				gap: 3%;
+				font-size: 1rem;
+			}
+
+			.contato-bottom{
+				padding: none;
+			}
+			h3{
+				font-size: 1rem;
+			}
+		}
+
+	
