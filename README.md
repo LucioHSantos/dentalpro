@@ -13,4 +13,4 @@ Para visualizar o deploy deste projeto por favor acesse:
 ![](https://img.shields.io/badge/CSS_-%2306879B)
 
 ## Screenshot
-![](https://i.imgur.com/8SpRz4o.png)
+![](https://i.imgur.com/uY8IVpi.png)
